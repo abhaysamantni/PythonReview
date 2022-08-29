@@ -28,6 +28,15 @@ Jan_Rubio
 Han-Hsuan_Lin
 Tobyan_Sohn
 Abhijay_Saini
+Kerry_Tu
+Alan_Nguyen
+Benjamin_Wang
+Anthony_Liu
+Jaykumar_Patel
+Spence_Simmons
+Axel_Castaneda
+Aniketh_Devarasetty
+Janvi_Patel
 Brock_Darling
 Grayson_Wills
 Shaunak_Divine
@@ -35,3 +44,4 @@ HongYuan_Chang
 Maryn_Kunthara
 Roshan_Rajan
 Michael_Routh
+Cynthia_Han
