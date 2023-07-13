@@ -10,7 +10,7 @@ def get_login_name(first, last, idnumber):
 
     # Get the first three letters of the last name.
     # If the name is less than 3 characters, the
-    # slice will return the entire last name.
+    # slice will return the entire last name. Test
     set2 = last[0 : 3]
 
     # Get the last three characters of the student ID.
