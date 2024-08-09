@@ -2,6 +2,7 @@
 dict={}
 
 file=open('contactinfo.txt','r')
+print('ISMAKI MAIS UMA MUDANÇA')
 for line in file:
     mylist=[]
     line=line.rstrip('\n')
