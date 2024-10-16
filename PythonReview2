@@ -1,0 +1,157 @@
+Classes:
+	class Coin:
+		def __init__(self):
+    			self.__sideup = "Heads"
+   	 
+		def toss(self):
+    			if(random.randint(0, 1) == 0):
+        			self.__sideup = "Heads"
+    		else:
+        			self.__sideup = "Tails"
+           	 
+	def get_sideup(self):
+    		return self.__sideup
+   	 
+File Handing:
+	file = open("testfile.txt", "rw") // r for read, w for write (truncate), a for append, x for xclusive open (fail if exist)
+	print(file.read(5)) // Read first 5 characters
+	print(file.readline())
+	for line in file:
+    		print(line.rstrip("\n")) // Print every line in file with end newline stripped.
+	file.write("Writing to the file.")
+	file.close() // Ensure we close file handles
+    
+Console I/O and Range:
+	totalScore = 0
+	for i in range(0, 100):
+    		name = input("Please enter your name: ")
+    		totalScore += Get_Score(name)
+	testScoreAverage = Get_Average(totalScore, 100)
+    
+Lists:
+	list = [1, 2, 3]
+	size = len(list)
+	list.append(4)
+	list.insert(0, 5)
+	slice = list[(:endIndex) or (startIndex:) or (startIndex:endIndex)
+	copyList = copy(list) // Deep copy
+	list.index(item) // returns index of item
+	list.sort()
+	list.remove(item)
+	list.reverse()
+	min(list)
+	max(list)
+	del list[index] // delete at index
+    
+Matplotlib:
+	import matplotlib.pyplot
+    
+	x_coords = [0, 1, 2]
+	y_coords = [5, 3, 8]
+	pyplot.plot(x_coords, y_coords)
+    
+	pyplot.xlim(xmin=1, xmax=100) // begins at 1, ends at 100
+	pyplot.ylim(ymin=10, ymax=50) // begins at 10, ends at 50
+    
+	pyplot.title("Sales by Year")
+	pyplot.xticks([0, 1, 2], ["2016", "2017", "2018"])
+    
+	pyplot.xlabel("Year"
+	pyplot.ylabel("Sales")
+	pyplot.grid(True)
+	pyplot.show()
+    
+	// Bar chart
+	left_edges = [0, 10, 20, 30, 40]
+	heights = [100, 200, 300, 400, 500]
+	bar_width = 5
+	pyplot.bar(left_edges, height, bar_width)
+	pyplot.show()
+    
+	// Pie chart
+	values = [20, 60, 80, 40]
+	pyplot.pie(values)
+	pyplot.show()
+    
+Dictionaries:
+	dictionary = {"Clint":"505-2612", "Katie":"505-3451"}
+	print(dictionary)
+    
+	value = dictionary[key]
+	for key in dictionary:
+    		print(key)
+    		print(key, dictionary[key]
+   	 
+	dictionary.clear()
+	dictionary.get(key, default)
+	dictionary.items() // returns all keys and values as set of tuples
+	dictionary.keys()
+	dictionary.pop(key, default) // Gets and removes pair from dictionary
+	dict.popitem() // Pop random pair
+	dict.values()
+
+NumPy:
+	import numpy as np
+	data = [6, 7.5, 8, 0, 1]
+	arr = np.array(data) // Create ndarray
+    
+	data2 = [[1, 2], [3, 4]]
+	arr2 = np.array(data2) // NdArray of arrays (2d array)
+    
+	np.zeros(2, 3)
+	np.ones(2, 3)
+	np.eye(3) // Creates nxn identity matrix\
+    
+	print (arr * arr)
+
+
+
+
+Misc:
+Substrings
+String[start:end:step]
+String[:5] - creates a string of the first 5 characters
+String[10::-1] - creates a reverse string of the first 10 chars
+
+Classes
+
+class Super:
+def __init__(self, arg1, arg2):
+Self.arg1 = arg1
+Self.arg2 = arg2
+
+#for a subclass
+class Sub(Super):
+Def __init__(self, arg1,arg2, arg3):
+	super.__init__(arg1,arg2)
+	Self.arg3 = arg3
+
+#to define a class with default parameters
+class Default:
+def __init__(self, arg1=”hello”, arg2=”world”):
+Self.arg1 = arg1
+Self.arg2 = arg2
+
+
+To get User input
+
+userInput = input(“Enter Text”)
+
+Formatting
+To round a number ​​round(number, ndigits)
+
+Sets
+#To initalize
+myset = {"apple", "banana", "cherry"}
+#Set items are unchangeable, meaning that we cannot change the items after the set has been created.
+#can also use the set constructor
+thisset = set(("apple", "banana", "cherry"))
+
+Math
+x = math.sqrt(64) #x=8
+x = math.ceil(1.4)
+y = math.floor(1.4)
+
+print(x) # returns 2
+print(y) # returns 1
+x = math.pi
