@@ -9,39 +9,39 @@
 
 2. Enter <code>abhaysamantni/PythonReview</code> in the <code> Search or jump to</code> box. <br>
 
-3. Click on the down arrow on the Fork button (right hand side of the website) <br>
+3. Click on the down arrow on the Fork button (top-right of the website) <br>
 
-4. Create a new fork or clone. The next set of instructions assumes that created a new fork. Save it as a new repository in your github account <br>
+4. Create a new fork. The rest of these instructions assume you created a new fork. Save it as a new repository in your github account <br>
 
 5. Go to command prompt <br>
 
-6. type <code>git clone HTTPS address</code>. You can get the HTTPs address by clicking on Code and copying
+6. type <code>git clone &lt;paste-the-HTTPS-URL&gt;</code>. You can get the HTTPS URL by clicking on Code and copying
 the address from the HTTPS tab <br>
 
 7. type <code>cd foldername</code> to go to the folder <br>
 
-8. type <code>git init</code> <br>
+8. Create and switch to a new branch named after yourself (use the format <code>firstname-lastname</code>).
+You can do this in one command: <code>git checkout -b firstname-lastname</code>
+(this is equivalent to running <code>git branch firstname-lastname</code> followed by <code>git checkout firstname-lastname</code>) <br>
 
-9. type <code>git branch branchName</code> <br>
-
-10. type <code>git checkout branchName</code> <br>
-
-11. Use a text editor of your choice to add the line "My initials are <yourinitials> and I like <your_hobby>" to the last line in the file class_register.txt.
+9. Use a text editor of your choice to add the line "My name is &lt;your_name&gt; and I like &lt;your_hobby&gt;" to the last line in the file class_register.txt.
 Name should be entered in the format FirstName_LastName <br>
 
-12. type <code>git add .</code> <br>
+10. type <code>git add .</code> <br>
 
-13. type <code> git commit -m "Commit message" </code> <br>
-14. type <code>git push --set-upstream origin branchName</code> <br>
+11. type <code> git commit -m "Commit message" </code> <br>
 
-15. You will be asked to enter your login id and personal access token.
-See <a>https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token</a>
+12. type <code>git push --set-upstream origin firstname-lastname</code> <br>
+
+13. You will be asked to authenticate. On Windows the easiest option is the Git Credential Manager or the GitHub CLI
+(<code>gh auth login</code>); otherwise you can enter your login id and a personal access token.
+See <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens</a>
 for more information <br>
 
-16. Go to your github account and create a pull request to request that the change from your forked repo
+14. Go to your github account and create a pull request to request that the change from your forked repo
 be merged to the parent repo (abhaysamantni/PythonReview) <br>
 
-17. I will then receive a notification to merge your change into the parent repo <br>
+15. I will then receive a notification to merge your change into the parent repo <br>
 
 
 </body>
